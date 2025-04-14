@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures sections take up full viewport height */
+    padding: 1rem;
+}
+
+.section {
+    width: 80%; /* Adjust width for better readability */
+    text-align: center;
+    margin-bottom: 2rem; /* Adds spacing between sections */
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .content {
+        padding: 2rem;
+    }
+
+    .section {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section {
+        width: 50%;
+    }
+}
+
+/* Add a background image to the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace 'background.jpg' with your image file */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    color: white; /* Adjust text color for better contrast */
+}
+
+/* Optional: Add a semi-transparent overlay for better readability */
+.section {
+    background-color: rgba(0, 0, 0, 0.6); /* Black with 60% transparency */
+    padding: 2rem;
+    border-radius: 8px;
+    color: white; /* Ensure text is readable */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.nav-links a:hover {
+    color: #f4a261; /* Change color on hover */
+}
+
+#home {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4rem 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f4a261; /* Change color on hover */
+}
+
+/* Fade-in animation for sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile-first design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-links {
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+
+    .section {
+        width: 60%;
+    }
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+#scrollToTop:hover {
+    background-color: #f4a261;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section a {
+    color: white; /* Set link color to white */
+}

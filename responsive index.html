@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="responsive styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <h1>Welcome to Obam Audit Company</h1>
+            <p>We are dedicated to providing top-notch auditing and financial consulting services to help your business thrive.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Obam Audit Company is a trusted name in the auditing industry. With years of experience, we specialize in delivering accurate and reliable financial audits to ensure compliance and transparency for our clients.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Financial Auditing</li>
+                <li>Tax Consulting</li>
+                <li>Risk Assessment</li>
+                <li>Internal Control Reviews</li>
+            </ul>
+        </section>
+
+        <!-- Contact Us Section -->
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Have questions or need our services? Reach out to us today!</p>
+    <p>Email: <a href="mailto:contact@obamaudit.com">obamjoseph006@gmail.com</a></p>
+    <p>Phone: <a href="tel:+1234567890">+254792853965</a></p>
+    <p>Address: <a href="https://www.google.com/maps?q=123+Audit+Lane,+Business+City,+BC+45678" target="_blank">
+        Kabete Springs, Lower Kabete Road</a></p>
+</section>
+    </main>
+     
+    <button id="scrollToTop" onclick="scrollToTop()">↑</button>
+    <footer class="footer">
+        <p>&copy; 2025 Obam Audit Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Show the button when scrolling down
+        window.onscroll = function () {
+            const scrollToTopButton = document.getElementById('scrollToTop');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        };
+
+        // Scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        </script>
+</body>
+</html>
